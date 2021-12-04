@@ -1,6 +1,6 @@
 import React from "react";
 import { debounce } from "../utilities/helpers";
-import '../css/MainContent.css';
+import '../static/css/MainContent.css';
 
 const MainContent = () => {
   return (

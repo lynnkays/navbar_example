@@ -1,17 +1,16 @@
 import React from "react";
-import "../css/App.css";
-import Navbar from "./Navbar";
+import "../static/css/App.css";
+import Navbar from "./Navigation/Navbar";
+import MobileNav from "./Navigation/MobileNav";
 import MainContent from "./MainContent";
 
 function App() {
   return (
     <>
       <nav>
-        <Navbar />
+        <MobileNav />
       </nav>
-      <main>
-        <MainContent />
-      </main>
+    
     </>
   );
 }

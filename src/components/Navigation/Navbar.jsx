@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { debounce } from "../utilities/helpers";
-import "../css/Navbar.css";
+import { debounce } from "../../utilities/helpers";
+import "../../static/css/Navigation/Navbar.css";
 
 const Navbar = () => {
   const [previousScroll, setPreviousScroll] = useState(0);
@@ -23,6 +23,7 @@ const Navbar = () => {
 
   return (
     <div className="topnav" style={{ top: show ? "0" : "-60px" }}>
+      <img src={Butterfly} alt="Butterfly" />
       <a href="#home">Home</a>
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
