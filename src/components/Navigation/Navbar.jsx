@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { debounce } from "../../utilities/helpers";
 import "../../static/css/Navigation/Navbar.css";
+import Logo from "../../static/img/logo.png";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   const [previousScroll, setPreviousScroll] = useState(0);
@@ -22,14 +24,20 @@ const Navbar = () => {
   }, [previousScroll, show, handleNav]);
 
   return (
-    <div className="topnav" style={{ top: show ? "0" : "-60px" }}>
-      <img src={Butterfly} alt="Butterfly" />
-      <a href="#home">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#about">About</a>
-    </div>
-  );
+    <>
+    // <div className="navbar" style={{ top: show ? "0" : "-1000px" }}>
+    //   <img src={Logo} alt="Logo"/>
+    //   <ul className="navbar-right">
+    //   <li><a href="#home">Home</a></li>
+    //   <li><a href="#news">News</a></li>
+    //   <li><a href="#contact">Contact</a></li>
+    //   <li><a href="#about">About</a></li>
+    //   </ul>
+    // </div>
+    // <MobileNav />
+    
+    </>
+  ); 
 };
 
 export default Navbar;

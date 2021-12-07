@@ -6,12 +6,14 @@ import MainContent from "./MainContent";
 
 function App() {
   return (
-    <>
+    <div>
       <nav>
         <MobileNav />
       </nav>
-    
-    </>
+      <main>
+        <MainContent />
+      </main>
+    </div>
   );
 }
 
