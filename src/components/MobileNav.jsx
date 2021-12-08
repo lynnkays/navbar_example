@@ -4,17 +4,22 @@ import "../css/MobileNav.css";
 
 const MobileNav = () => {
   const [openNav, setOpenNav] = useState(false);
+  const [animateHam, setAnimateHam] = useState(false);
 
   const handleMenu = () => {
     setOpenNav(!openNav);
+    setAnimateHam(!animateHam);
   };
 
   return (
     <>
-   <button className="hamburger" onClick={handleMenu}>
-      <div></div>
-      <div></div>
-      <div></div>
+   <button onClick={handleMenu}>
+   <div className={`hamburger ${animateHam ? " open":""}`}>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     </button>
      <div className={`menu ${openNav ? " show-menu" : ""}`}>
         <a onClick={handleMenu} className="close">&#10006;</a>
