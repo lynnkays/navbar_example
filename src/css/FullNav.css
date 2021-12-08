@@ -7,9 +7,8 @@
 .navbar-right li a {
   text-decoration: none;
   color: #6FFFB0;
-  padding: 1em;
-  margin: 1em;
-  font-size: 1.2em;
+  padding: 2vh 2vw;
+  font-size: 1.5vw;
   width: 5em;
 }
 

@@ -1,8 +1,9 @@
+/* Full Navbar */
 .topnav {
   overflow: hidden;
   background-color: #7D4CDB;
-  height: 6vw;
-  max-height: 70px;
+  height: 8vh;
+  max-height: 15vh;
   width: 100%;
   position: fixed;
   transition: 'top 0.6s';
@@ -12,9 +13,9 @@
 }
 
 .topnav img {
-  max-height: 3em;
-  max-width: 3em;
-  margin: 0.5em;
+  margin: 2%;
+  max-height: 75%;
+  max-width: 75%;
 }
 
 .fullnav {
@@ -27,22 +28,22 @@
   display: none;
 }
 
+/* Mobile Navbar */
 @media screen and (max-width: 1000px) {
   .topnav {
     overflow: hidden;
     background-color: #7D4CDB;
-    height: auto;
-    min-height: 48px;
-    max-height: 71px;
+    min-height: 8vh;
+    max-height: 10vh;
     width: 100%;
     position: fixed;
     left: 0;
- 
    
   }
   .topnav img {
-    min-height: 3em;
-    min-width: 3em;
+    margin: 3%;
+    max-height: 80%;
+    max-width: 80%;
   }
 
   .mobilenav {
