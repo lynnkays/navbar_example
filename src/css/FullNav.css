@@ -7,10 +7,10 @@
 .navbar-right li a {
   text-decoration: none;
   color: #6FFFB0;
-  padding: 2vh;
-  margin: 2vh;
-  font-size: 1.5vw;
-  width: 5vw;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1.2em;
+  width: 5em;
 }
 
 .navbar-right li a:hover {
