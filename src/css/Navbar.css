@@ -1,23 +1,59 @@
+/* Full Navbar */
 .topnav {
   overflow: hidden;
   background-color: #7D4CDB;
-  height: 60px;
+  height: 8vh;
+  max-height: 15vh;
   width: 100%;
   position: fixed;
   transition: 'top 0.6s';
   left: 0;
+  align-items: center;
+  display: flex;
 }
 
-.topnav a {
-  float: left;
-  color: #6FFFB0;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.topnav img {
+  margin: 2%;
+  max-height: 75%;
+  max-width: 75%;
 }
 
-.topnav a:hover {
-  background-color: #6FFFB0;
-  color: #7D4CDB;
+.fullnav {
+  margin-left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.mobilenav {
+  display: none;
+}
+
+/* Mobile Navbar */
+@media screen and (max-width: 1000px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #7D4CDB;
+    min-height: 8vh;
+    max-height: 10vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+   
+  }
+  .topnav img {
+    margin: 3%;
+    max-height: 80%;
+    max-width: 80%;
+  }
+
+  .mobilenav {
+      display: flex;
+      right: 0;
+      top: 0;
+      position: absolute;
+
+  }
+  .fullnav {
+    display:none;
+  }
 }
