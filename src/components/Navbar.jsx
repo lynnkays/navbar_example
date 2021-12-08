@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { debounce } from "../utilities/helpers";
 import "../css/Navbar.css";
 import MobileNav from "./MobileNav";
+import FullNav from "./FullNav";
 import Logo from "../logo.png";
 
 const Navbar = () => {
@@ -26,7 +27,12 @@ const Navbar = () => {
   return (
     <div className="topnav" style={{ top: show ? "0" : "-1000px" }}>
       <img src={Logo}></img>
+      <div className="fullnav">
+      <FullNav />
+      </div>
+      <div className="mobilenav">
       <MobileNav />
+      </div>
     </div>
   );
 };

@@ -4,15 +4,15 @@
   margin: 20px;
   background-color: #7D4CDB;
   border: none;
-  position: fixed;
-
+  position: relative;
 }
 
 .hamburger div {
-  width: 8vw;
-  height: 1vw;
+  width: 5vw;
+  height: 0.5vw;
   background-color: #6FFFB0;
   margin: 6px 0;
+  transition: 0.4s;  
 }
 
 .menu {
@@ -24,13 +24,21 @@
   list-style: none;
   margin-top: 0px;
 
-
 }
 
-.menu .close {
+.menu > .close {
   float: right;
   text-decoration: none;
   color: #3D138E;
+  font-size: 5vw;
+  padding: 5vw;
+  height: 100%;
+}
+
+.menu > .close:hover {
+  float: right;
+  text-decoration: none;
+  color: #FD6FFF;
   font-size: 5vw;
   padding: 5vw;
   height: 100%;
@@ -42,6 +50,8 @@
   display: flex;
   flex-direction: column;
   padding: 2vw 20vw;
+  padding-top: 5vw;
+
 }
 
 .menu > ul li a {
@@ -54,10 +64,10 @@
 
 }
 
-.menu ul li a:hover {
+.menu > ul li a:hover {
   color: #FD6FFF;
-
 }
+
 .menu.show-menu {
   height: auto;
   top: 0;

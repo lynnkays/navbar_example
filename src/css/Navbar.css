@@ -1,23 +1,56 @@
 .topnav {
   overflow: hidden;
   background-color: #7D4CDB;
-  height: 60px;
+  height: 6vw;
   width: 100%;
   position: fixed;
   transition: 'top 0.6s';
   left: 0;
+  align-items: center;
+  display: flex;
 }
 
-.topnav a {
-  float: left;
-  color: #6FFFB0;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.topnav img {
+  max-height: 4vw;
+  max-width: 4vw;
+  margin: 1vw;
 }
 
-.topnav a:hover {
-  background-color: #6FFFB0;
-  color: #7D4CDB;
+.fullnav {
+  margin-left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.mobilenav {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .topnav {
+    overflow: hidden;
+    background-color: #7D4CDB;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    align-items: center;
+    display: flex;
+   
+  }
+  .topnav img {
+    min-height: 8vw;
+    min-width: 8vw;
+  }
+
+  .mobilenav {
+      display: flex;
+      right: 0;
+      top: 0;
+      position: absolute;
+
+  }
+  .fullnav {
+    display:none;
+  }
 }

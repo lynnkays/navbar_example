@@ -1,0 +1,22 @@
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-right li a {
+  text-decoration: none;
+  color: #6FFFB0;
+  padding: 2vh;
+  margin: 2vh;
+  font-size: 1.5vw;
+  width: 5vw;
+}
+
+.navbar-right li a:hover {
+  color: #7D4CDB;
+  outline-style: solid;
+  outline-color: #7D4CDB;
+  border-radius: 25%;
+  background-color: #6FFFB0;
+}

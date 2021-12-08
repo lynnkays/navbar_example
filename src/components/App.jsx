@@ -2,7 +2,6 @@ import React from "react";
 import "../css/App.css";
 import Navbar from "./Navbar";
 import MainContent from "./MainContent";
-import MobileNav from "./MobileNav";
 
 function App() {
   return (

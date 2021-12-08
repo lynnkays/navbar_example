@@ -16,9 +16,8 @@ const MobileNav = () => {
       <div></div>
       <div></div>
     </button>
-    <div className="menu-wrapper">
      <div className={`menu ${openNav ? " show-menu" : ""}`}>
-        <a href="#close" onClick={handleMenu} className="close">&#10006;</a>
+        <a onClick={handleMenu} className="close">&#10006;</a>
         <ul>
           <li>
             <a href="#home">Home</a>
@@ -33,7 +32,6 @@ const MobileNav = () => {
             <a href="#about">About</a>
           </li>
           </ul>
-      </div>
       </div>
       </>
 
