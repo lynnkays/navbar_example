@@ -3,21 +3,25 @@ import { debounce } from "../utilities/helpers";
 import "../css/MobileNav.css";
 
 const MobileNav = () => {
-  const [openNav, setOpenNav] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [animateIcon, setAnimateIcon] = useState(false);
 
   const handleMenu = () => {
-    setOpenNav(!openNav);
+    setOpenMenu(!openMenu);
+    setAnimateIcon(!animateIcon);
   };
 
   return (
     <>
-   <button className="hamburger" onClick={handleMenu}>
-      <div></div>
-      <div></div>
-      <div></div>
-    </button>
-     <div className={`menu ${openNav ? " show-menu" : ""}`}>
-        <a onClick={handleMenu} className="close">&#10006;</a>
+      <a className="icon-button" onClick={handleMenu}>
+        <div className={`icon ${animateIcon ? " transform" : ""}`}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </a>
+      <div className={`menu ${openMenu ? " display" : ""}`}>
         <ul>
           <li>
             <a href="#home">Home</a>
@@ -31,10 +35,9 @@ const MobileNav = () => {
           <li>
             <a href="#about">About</a>
           </li>
-          </ul>
+        </ul>
       </div>
-      </>
-
+    </>
   );
 };
 

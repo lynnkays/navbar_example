@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { debounce } from "../utilities/helpers";
 import "../css/Navbar.css";
+import Logo from "../logo.png";
 import MobileNav from "./MobileNav";
 import FullNav from "./FullNav";
-import Logo from "../logo.png";
 
 const Navbar = () => {
   const [previousScroll, setPreviousScroll] = useState(0);
@@ -25,16 +25,15 @@ const Navbar = () => {
   }, [previousScroll, show, handleNav]);
 
   return (
-    <div className="topnav" style={{ top: show ? "0" : "-1000px" }}>
+    <div className="nav-background" style={{ top: show ? "0" : "-1000px" }}>
       <img src={Logo}></img>
-      <div className="fullnav">
-      <FullNav />
+      <div className="full-nav">
+        <FullNav />
       </div>
-      <div className="mobilenav">
-      <MobileNav />
+      <div className="mobile-nav">
+        <MobileNav />
       </div>
     </div>
   );
 };
-
 export default Navbar;
