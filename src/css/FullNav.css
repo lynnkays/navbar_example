@@ -1,21 +1,22 @@
-.navbar-right {
+/* Menu Items Styles */
+.menu-items {
   margin-left: auto;
   display: flex;
   list-style-type: none;
 }
 
-.navbar-right li a {
+.menu-items li a {
   text-decoration: none;
-  color: #6FFFB0;
+  color: #6fffb0;
   padding: 2vh 2vw;
   font-size: 1.5vw;
   width: 5em;
 }
 
-.navbar-right li a:hover {
-  color: #7D4CDB;
+.menu-items li a:hover {
+  color: #7d4cdb;
   outline-style: solid;
-  outline-color: #7D4CDB;
+  outline-color: #7d4cdb;
   border-radius: 25%;
-  background-color: #6FFFB0;
+  background-color: #6fffb0;
 }

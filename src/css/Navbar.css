@@ -1,7 +1,7 @@
-/* Full Navbar */
-.topnav {
+/* Main Navbar Background */
+.nav-background {
   overflow: hidden;
-  background-color: #7D4CDB;
+  background-color: #7d4cdb;
   height: 8vh;
   max-height: 15vh;
   width: 100%;
@@ -12,38 +12,41 @@
   display: flex;
 }
 
-.topnav img {
+/* Logo */
+.nav-background img {
   margin: 2%;
   max-height: 75%;
   max-width: 75%;
 }
 
-.fullnav {
+/* Website View Navbar */
+.full-nav {
   margin-left: auto;
   display: flex;
   list-style-type: none;
 }
 
-.mobilenav {
+/* Mobile View Navbar */
+.mobile-nav {
   display: none;
 }
 
-/* Mobile Navbar */
+/* Responsive Navbar */
 @media screen and (max-width: 1000px) {
+  .topnav {
+    height: 8vh;
+  }
   .topnav img {
     margin: 3%;
     max-height: 80%;
     max-width: 80%;
   }
-
-  .mobilenav {
-      display: flex;
-      right: 0;
-      top: 0;
-      position: absolute;
-
+  .mobile-nav {
+    margin-left: auto;
+    display: flex;
+    width: auto;
   }
-  .fullnav {
-    display:none;
+  .full-nav {
+    display: none;
   }
 }
